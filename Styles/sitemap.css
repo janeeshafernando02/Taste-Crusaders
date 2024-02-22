@@ -1,0 +1,16 @@
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(rgba(156, 149, 149, 0.75),rgba(156, 149, 149, 0.75)), url("../Images/background1.jpg");
+    background-size: cover;
+}
+
+circle:hover {
+    fill: #48acc0;
+    stroke: white;
+    stroke-width: 7;
+}
+
+    

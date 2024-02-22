@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <title>Review</title>
+        <link rel="stylesheet" href="../Styles/feedback.css"> 
+        <link rel="stylesheet" href="../Styles/navbar.css" />
+        <link rel="stylesheet" href="../Styles/footer.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    </head>
+    <body>
+           <!-- Navigation Bar -->
+           <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../Images/logo1.png" class="logo-img" alt="logo">
+                    <a href = "index.html" class="logo-name">Taste Crusaders</a>
+                  </div>
+                <ul class="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="AboutUs.html">About</a></li>
+                  <li><a href="ourgallery.html">Gallery</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+                  <li><a href="Quiz.html">Quiz</a></li>
+                  <li><a href="Feedback.html" class="active">Review</a></li>
+                  <li><a href="Shop.html">Order</a></li>
+                </ul>
+                </div>
+        </header> 
+
+          <!-- Form -->
+          <br>
+          <div class="formbody">
+            <div class="form-box"> 
+          <h1>We Value Your Feedback</h1>
+              <form id="feedback-form">
+                <div>
+                  <label>How satisfied were you with our website today? Choose from 0 to 10, where 0 is extremely dissatisfied
+                     and 10 is extremely satisfied.</label>
+                  <div class="radio-group">
+                    <input type="radio" id="rating-0" name="rating" value="0">
+                    <label class="radio-label" for="rating-0">0</label>
+                    <input type="radio" id="rating-1" name="rating" value="1">
+                    <label class="radio-label" for="rating-1">1</label>
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label class="radio-label" for="rating-2">2</label>
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label class="radio-label" for="rating-3">3</label>
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label class="radio-label" for="rating-4">4</label>
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                    <label class="radio-label" for="rating-5">5</label>
+                    <input type="radio" id="rating-6" name="rating" value="6">
+                    <label class="radio-label" for="rating-6">6</label>
+                    <input type="radio" id="rating-7" name="rating" value="7">
+                    <label class="radio-label" for="rating-7">7</label>
+                    <input type="radio" id="rating-8" name="rating" value="8">
+                    <label class="radio-label" for="rating-8">8</label>
+                    <input type="radio" id="rating-9" name="rating" value="9">
+                    <label class="radio-label" for="rating-9">9</label>
+                    <input type="radio" id="rating-10" name="rating" value="10">
+                    <label class="radio-label" for="rating-10">10</label>
+                  </div>
+                </div>
+                <div>
+                  <label>Please could you tell us your reasons for giving this rating?</label>
+                  <textarea name="reasons"></textarea>
+                </div>
+                <div>
+                  <label>How did you want to complete this task today? (optional)</label>
+                  <select name="task_completion">
+                    <option value="please-select">-- Please Select --</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Website">Website</option>
+                    <option value="Webchat">Webchat</option>
+                    <option value="Social media">Social media</option>
+                    <option value="Email">Email</option>
+                  </select>
+                </div>
+                <div>
+                  <label>If you had to complete this task again, how would you prefer to do it? (optional)</label>
+                  <select name="task_preference">
+                    <option value="please-select">-- Please Select --</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Website">Website</option>
+                    <option value="Webchat">Webchat</option>
+                    <option value="Social media">Social media</option>
+                    <option value="Email">Email</option>
+                  </select>
+                </div>
+  
+                <br><br>
+  
+                <input type="submit" value="Submit">
+              </form>
+              <div id="thank-you" style="display: none;" class="thankyou">
+                
+                <p>Thank you for taking time to give us your feedback on your experience today.</p>
+              </div>
+              <script src="../Scripts/feedback.js"></script>
+          </div>
+          </div>
+          <script>
+            // Get the current page URL
+            const currentUrl = window.location.href;
+        
+            // Get all the navigation links
+            const navLinks = document.querySelectorAll('.links li a');
+        
+            // Loop through each link and check if it matches the current URL
+            for (const link of navLinks) {
+                if (link.href === currentUrl) {
+                    // Add the "active" class to the matching link
+                    link.classList.add('active');
+                }
+            }
+        </script>
+           <footer>
+            <div class="content">
+              <div class="top">
+                <div class="logo-details">
+                  <img src="../Images/logo1.png" class="logo-img" alt="logo-image">  
+                  <span class="logo_name">Taste Crusaders</span>
+                </div>
+                <div class="media-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100084432848059"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/JaneeshaF44259"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/infinitesouls.02/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/shalindi-fernando-98512927a/"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.youtube.com/@tastecrusaders8404"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="link-boxes">
+                <ul class="box">
+                  <li class="link_name">Company</li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="ContactUs.html">Contact us</a></li>
+                  <li><a href="AboutUs.html">About us</a></li>
+                  <li><a href="student2.html">Page Editor</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Categories</li>
+                  <li><a href="BeveragesBlog.html">Beverages</a></li>
+                  <li><a href="Snacks.html">Snacks</a></li>
+                  <li><a href="sweets.html">Sweets</a></li>
+                  <li><a href="#">Desserts</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Account</li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">My account</a></li>
+                  <li><a href="#">Prefrences</a></li>
+                  <li><a href="Feedback.html">Feedback</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Features</li>
+                  <li><a href="Quiz.html">Quiz</a></li>
+                  <li><a href="sitemap.html">SiteMap</a></li>
+                  <li><a href="ourgallery.html">Gallery</a></li>
+                  <li><a href="Shop.html">Purchase</a></li>
+                </ul>
+                <ul class="box input-box">
+                  <li class="link_name">Subscribe</li>
+                  <li><input type="text" placeholder="Enter your email"></li>
+                  <li><input type="button" value="Subscribe"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom-details">
+              <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2023 Taste Crusaders. All rights reserved</span>
+                <span class="policy_terms">
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Terms & condition</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>
+
+
+    
+
+    

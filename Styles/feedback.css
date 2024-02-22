@@ -1,0 +1,190 @@
+body{
+  background-image: url("../Images/macaroons.jpg");
+  background-size: cover;
+ 
+}
+
+.formbody {
+  width:100%;
+  height:170vh;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    height: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+  }
+
+  .form-box h1 {
+    padding-top: 20px;
+    color: #1d7e92;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .form-box label {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: rgb(2, 2, 2);   
+  
+  }
+  
+  .form-box input[type="radio"] {
+    display: none;
+    
+  }
+  
+  .form-box .radio-label {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 30px;
+    background-color:#3396aa;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    color: rgb(255, 255, 255);
+  }
+  
+  .form-box .radio-label:hover {
+    
+    background: 
+    linear-gradient(#1d7e92, #92d1dd) padding-box,
+    linear-gradient(to right, #3396aa 0%,rgb(121, 180, 32) 100%) border-box;
+    transition: 0.1s;
+    background-size: 200% auto;
+    border: 4px solid transparent;
+  }
+  
+  .form-box input[type="radio"]:checked + .radio-label {
+    background-image: linear-gradient(to right, #24C6DC 0%, rgb(154, 228, 43) 51%, greenyellow  100%);
+    background-size: 200% auto;
+    color: rgb(10, 10, 10);            
+  
+  }
+  
+  .form-box select {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+  }
+
+  .form-box select:hover {
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #1d7e92 0%, #fffeff  51%, #1d7e92 100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box select:focus {
+     outline: none;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #24C6DC 0%, #1d7e92  51%, #24C6DC  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box textarea {
+    margin-top: 20px;
+    display: block;
+    width: 90%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    resize: none;
+  }
+
+  .form-box textarea:hover {
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right,#1d7e92 0%, #1d7e92 51%, #1d7e92  100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+  }
+  
+  .form-box textarea:focus {
+     outline: none;
+    background: 
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #24C6DC 0%, #24C6DC  51%, #24C6DC  100%) border-box;
+        transition: 0.5s;
+        background-size: 200% auto;
+        border: 1px solid transparent;
+
+  }
+  
+  .form-box input[type="submit"] {
+    width: 60%;
+    height: 50px;
+    background-image: linear-gradient(to right, #1d7e92 0%, #21b2c5 51%, #1d7e92 100%);
+    margin: 10px auto;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);  
+    border-color: #f5f3f3;          
+    border-radius: 10px;
+    display: block;
+    
+  }
+  
+  .form-box input[type="submit"]:hover {
+     background-position: center;
+    color: #f5f3f3;
+    text-decoration: none;
+  }
+
+
+  .thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .thankyou {
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+         
+  .error-outline {
+    outline: 1px solid rgb(255, 14, 14);
+
+  }
+
+
+ 
+ 

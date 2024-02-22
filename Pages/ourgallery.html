@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Our Gallery</title>
+        <link rel="stylesheet" href="../Styles/navbar.css" />
+        <link rel="stylesheet" href="../Styles/footer.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../Styles/ourgallery.css">
+    </head>
+    <body>
+       <!-- Navigation Bar -->
+       <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../Images/logo1.png" class="logo-img" alt="logo">
+                <a href = "index.html" class="logo-name">Taste Crusaders</a>
+              </div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About</a></li>
+              <li><a href="ourgallery.html" class="active">Gallery</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="Quiz.html">Quiz</a></li>
+              <li><a href="Feedback.html">Review</a></li>
+              <li><a href="Shop.html">Order</a></li>
+            </ul>
+            </div>
+    </header>
+    <section>
+    
+        <!--radio buttons-->
+        <input type="radio" name="radio-btn" id="check1" checked>
+        <input type="radio" name="radio-btn" id="check2">
+        <input type="radio" name="radio-btn" id="check3">
+        <input type="radio" name="radio-btn" id="check4">
+
+        <!--background color-->
+        <div>
+            <button class="button-color" style="background-color: white;" onclick="changeBackgroundColor('white')"></button>
+            <button class="button-color" style="background-color: rgb(238, 206, 206);" onclick="changeBackgroundColor('pink')"></button>
+            <button class="button-color" style="background-color: #a8dae4;" onclick="changeBackgroundColor('lightblue')"></button>
+        </div>
+
+        <!--font size change-->
+        <div>
+            <button class="change-fontsize" onclick="increaseFontSize()">+</button>
+            <button class="change-fontsize" onclick="decreaseFontSize()">-</button>
+            <button class="change-fontsize" onclick="defaultFontSize()">D</button>
+        </div>
+
+        <!--gallery images-->
+        <div id="text" class="container" style="font-size: 17px;">
+            <h1>Our Gallery</h1>
+            <div class="content1">
+                <h3>Gallery</h3>
+                <label for="check1"> Desserts </label>
+                <label for="check2"> Beverages </label>
+                <label for="check3"> Snacks </label>
+                <label for="check4"> Sweets </label>
+            
+            </div>
+
+            <div class="photo">
+
+                <div class="pic desserts">
+                    <a href="../Images/brownie.jpg" target="_blank" onclick="return openImage(this)">
+                        <img class="thumbnail" src="../Images/brownie.jpg" alt ="brownie">
+                    </a>
+                    <h4>Brownie</h4>
+                </div>
+
+                <div class="pic desserts">
+                    <a href="../Images/redvelvetcake.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/redvelvetcake.jpg" alt ="redvelvetcake">
+                    </a>
+                    <h4>Red Velvet Cake</h4>
+                </div>
+
+                <div class="pic desserts">
+                    <a href="../Images/creambrulee.png" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/creambrulee.png" alt ="creambrulee">
+                    </a>
+                    <h4>Cream Brulee</h4>
+                </div>
+
+                <div class="pic desserts">
+                    <a href="../Images/fruittart.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/fruittart.jpg" alt ="fudge">
+                    </a>
+                    <h4>Fruits Tart</h4>
+                </div>
+
+                <div class="pic desserts">
+                    <a href="../Images/chocolatemousse.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/chocolatemousse.jpg" alt="mousse" >
+                    </a>
+                    <h4>Chocolate Mousse</h4>
+                </div>
+
+                <div class="pic beverages">
+                    <a href="../Images/strawberrysoothie.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/strawberrysoothie.jpg" alt ="strawberrysoothie">
+                    </a>
+                    <h4>Strawberry Smoothie</h4>
+                </div>
+
+                <div class="pic beverages">
+                    <a href="../Images/mangosmoothie.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/mangosmoothie.jpg" alt ="mangosmoothie">
+                    </a>
+                    <h4>Mango Smoothie</h4>
+                </div>
+
+                <div class="pic beverages">
+                    <a href="../Images/icedcoffee.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/icedcoffee.jpg" alt ="icedcoffee">
+                    </a>
+                    <h4>Iced Coffee</h4>
+                </div>
+
+                <div class="pic beverages">
+                    <a href="../Images/lemonade.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/lemonade.jpg" alt ="lemonade">
+                    </a>
+                    <h4>Lemonade</h4>
+                </div>
+
+                <div class="pic beverages">
+                    <a href="../Images/mocha.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/mocha.jpg" alt="mocha" >
+                    </a>
+                    <h4>Mocha</h4>
+                </div>
+
+                <div class="pic snacks">
+                    <a href="../Images/burger1.jpeg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/burger1.jpeg" alt ="burger">
+                    </a>
+                    <h4>Burger</h4>
+                </div>
+
+                <div class="pic snacks">
+                    <a href="../Images/pizza.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/pizza.jpg" alt ="pizza">
+                    </a>
+                    <h4>Pizza</h4>
+                </div>
+
+                <div class="pic snacks">
+                    <a href="../Images/wraps.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/wraps.jpg" alt ="wraps">
+                    </a>
+                    <h4>Wraps</h4>
+                </div>
+
+                <div class="pic snacks">
+                    <a href="../Images/sandwich.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/sandwich.jpg" alt="sandwich" >
+                    </a>
+                    <h4>Sandwich</h4>
+                </div>
+
+                <div class="pic snacks">
+                    <a href="../Images/cornDogs.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/cornDogs.jpg" alt="cornDogs" >
+                    </a>
+                    <h4>Corn Dogs</h4>
+                </div>
+
+                <div class="pic sweet">
+                    <a href="../Images/macaroons.jpeg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/macaroons.jpeg" alt ="macaroons">
+                    </a>
+                    <h4>Macaroons</h4>
+                </div>
+
+                <div class="pic sweet">
+                    <a href="../Images/doughnut.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/doughnut.jpg" alt ="doughnut">
+                    </a>
+                    <h4>Doughnut</h4>
+                </div>
+
+                <div class="pic sweet">
+                    <a href="../Images/chocolatechipcookie.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/chocolatechipcookie.jpg" alt ="cookie">
+                    </a>
+                    <h4>Chocolate Chip Cookie</h4>
+                </div>
+
+                <div class="pic sweet">
+                    <a href="../Images/chocolatefudge.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/chocolatefudge.jpg" alt="fudge" >
+                    </a>
+                    <h4>Chocolate Fudge</h4>
+                </div>
+
+                <div class="pic sweet">
+                    <a href="../Images/chocolateTruffles.jpg" target="_blank" onclick="return openImage(this)">
+                        <img src="../Images/chocolateTruffles.jpg" alt="truffles" >
+                    </a>
+                    <h4>Chocolate Truffles</h4>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script>
+            //Fuction to open the image when click on the image
+            function openImage(element) {
+                //prevent default link behavior
+                event.preventDefault();
+
+                // Get the URL of the image from the href attribute
+                var imageURL = element.getAttribute('href') || element.getAttribute('src');
+
+                // Open the image in the same window
+                window.location.href = imageURL;
+
+                // Return false to prevent the link from being followed again
+                return false;
+            }
+
+            // Background color changing function
+            function changeBackgroundColor(color){
+                //clear the existing classes
+                document.body.className = '';
+                //add the specified color
+                document.body.classList.add(color)
+            }
+
+            // Increase font size function
+            function increaseFontSize(){
+                //get the element
+                var itext = document.getElementById("text");
+                //get the current font size
+                var currentSize = window.getComputedStyle(itext,null).getPropertyValue("font-size");
+                //Increase the font size
+                var newSize = parseInt(currentSize) + 1;
+                //set the new font size
+                text.style.fontSize = newSize + "px";
+            }
+
+            // Decrease font size function
+            function decreaseFontSize(){
+                //get the element
+                var dtext = document.getElementById("text");
+                //get the current font size
+                var currentSize = window.getComputedStyle(dtext,null).getPropertyValue("font-size");
+                //Decrease the font size
+                var newSize = parseInt(currentSize) - 1;
+                //set the new font size
+                text.style.fontSize = newSize + "px";
+            }
+
+            // Default font size function
+            function defaultFontSize(){
+                //Get the element
+                var itext = document.getElementById("text");
+                //Set the default font size
+                text.style.fontSize = "17px";
+            }
+        </script>
+        </section>
+
+         <!-- Footer -->
+      <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <img src="../Images/logo1.png" class="logo-img" alt="logo-image">  
+              <span class="logo_name">Taste Crusaders</span>
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/profile.php?id=100084432848059"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/JaneeshaF44259"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/infinitesouls.02/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/shalindi-fernando-98512927a/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/@tastecrusaders8404"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Company</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ContactUs.html">Contact us</a></li>
+              <li><a href="AboutUs.html">About us</a></li>
+              <li><a href="student4.html">Page Editor</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Categories</li>
+              <li><a href="BeveragesBlog.html">Beverages</a></li>
+              <li><a href="Snacks.html">Snacks</a></li>
+              <li><a href="sweets.html">Sweets</a></li>
+              <li><a href="#">Desserts</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Account</li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">Prefrences</a></li>
+              <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Features</li>
+              <li><a href="Quiz.html">Quiz</a></li>
+              <li><a href="sitemap.html">SiteMap</a></li>
+              <li><a href="ourgallery.html">Gallery</a></li>
+              <li><a href="Shop.html">Purchase</a></li>
+            </ul>
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email"></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2023 Taste Crusaders. All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>                
+
+    </body>
+</html>

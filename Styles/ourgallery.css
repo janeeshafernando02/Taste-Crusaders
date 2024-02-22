@@ -1,0 +1,214 @@
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body.lightblue{
+    background-color: #a8dae4;
+}
+
+body.pink{
+    background-color: rgb(238, 206, 206);
+}
+
+body.white{
+    background-color: white;
+}
+
+.button-color {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.change-fontsize{
+    width: 30px;
+    height: 30px;
+    margin-left: 1400px;
+    margin-top:-20px;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    height: 80vh;
+   
+}
+
+h1{
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.content1{
+    background-color: rgb(231, 230, 230);
+    margin: 0 auto 20px auto;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #4e7b84;
+}
+
+h3 {
+    height: 100%;
+    background-color: #187284;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+}
+
+label {
+    display: inline;
+    height: 100%;
+    margin: 0 20px 0px 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+label:hover{
+    font-size: 18px;
+    color:white;
+    border: 1px;
+    background-color: #187284;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 20px 0px 20px;
+}
+
+.photo {
+    width: 90px;
+    margin-top: 40px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    position: relative;
+}
+
+.container .photo>div.pic:not(.sweet){
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    z-index: 2;
+}
+
+.pic {
+    margin-top: 20px;
+    height: 230px;
+    position: relative;
+}
+
+.pic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.pic:hover img{
+    border: none;
+
+}
+
+.pic h4{
+    position: absolute;
+    margin-bottom: 130px;
+    color: white;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pic:hover h4{
+    opacity: 1;
+   
+}
+
+
+#check1:checked ~ .container .photo .desserts{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+}
+
+#check1:checked ~ .container .photo .beverages,
+#check1:checked ~ .container .photo .snacks,
+#check1:checked ~ .container .photo .sweet{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    z-index: 2;
+}
+
+#check2:checked ~ .container .photo .beverages{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+}
+
+#check2:checked ~ .container .photo .desserts,
+#check2:checked ~ .container .photo .snacks,
+#check2:checked ~ .container .photo .sweet{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    z-index: 2;
+}
+
+#check3:checked ~ .container .photo .snacks{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+}
+#check3:checked ~ .container .photo .beverages,
+#check3:checked ~ .container .photo .sweet,
+#check3:checked ~ .container .photo .desserts{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    z-index: 2;
+}
+
+#check4:checked ~ .container .photo .sweet{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    z-index: 1;
+}
+#check4:checked ~ .container .photo .beverages,
+#check4:checked ~ .container .photo .snacks
+#check4:checked ~ .container .photo .desserts{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+    z-index: 2;
+}
+
+
+

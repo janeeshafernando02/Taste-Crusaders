@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width,initial-scal=1.0" />
+    <link rel="stylesheet" href="../Styles/aboutUs.css" />
+    <link rel="stylesheet" href="../Styles/navbar.css" />
+    <link rel="stylesheet" href="../Styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../Images/logo1.png" class="logo-img" alt="logo" />
+          <a href="index.html" class="logo-name">Taste Crusaders</a>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html" class="active">About</a></li>
+          <li><a href="ourgallery.html">Gallery</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="Quiz.html">Quiz</a></li>
+          <li><a href="Feedback.html">Review</a></li>
+          <li><a href="Shop.html">Order</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="heading">
+        <h1>Student Details</h1>
+        <h2><b>Meet our amazing team members!</b></h2>
+      </div>
+      <div class="team_section">
+        <div class="team_container">
+          <div class="team">
+            <div class="team_img">
+              <img src="../Images/Chirani1.jpg" alt="Chirani" />
+              <div class="middle">
+                <div class="text">
+                  <p><b>Chirani Fernando, Role :Student 1</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team">
+            <div class="team_img">
+              <img src="../Images/jani1.jpg" alt="Janeesha" />
+              <div class="middle">
+                <div class="text">
+                  <p><b> Janeesha Fernando, Role :Student 2</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team">
+            <div class="team_img">
+              <img src="../Images/ark1.jpg" alt="ARK" />
+              <div class="middle">
+                <div class="text">
+                  <p><b>Anuththara Kannangara, Role :Student 3</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team">
+            <div class="team_img">
+              <img src="../Images/sarini3.jpg" alt="Sarini" />
+              <div class="middle">
+                <div class="text">
+                  <p><b>Sarini Hasangee, Role :Student 4</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Get the current page URL
+      const currentUrl = window.location.href;
+
+      // Get all the navigation links
+      const navLinks = document.querySelectorAll(".links li a");
+
+      // Loop through each link and check if it matches the current URL
+      for (const link of navLinks) {
+        if (link.href === currentUrl) {
+          // Add the "active" class to the matching link
+          link.classList.add("active");
+        }
+      }
+    </script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <img
+              src="../Images/logo1.png"
+              class="logo-img"
+              alt="logo-image"
+            />
+            <span class="logo_name">Taste Crusaders</span>
+          </div>
+          <div class="media-icons">
+            <a href="https://www.facebook.com/profile.php?id=100084432848059"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/JaneeshaF44259"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/infinitesouls.02/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/shalindi-fernando-98512927a/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.youtube.com/@tastecrusaders8404"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Company</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact us</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="student3.html">Page Editor</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Categories</li>
+            <li><a href="BeveragesBlog.html">Beverages</a></li>
+            <li><a href="Snacks.html">Snacks</a></li>
+            <li><a href="sweets.html">Sweets</a></li>
+            <li><a href="#">Desserts</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Prefrences</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Features</li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="sitemap.html">SiteMap</a></li>
+            <li><a href="ourgallery.html">Gallery</a></li>
+            <li><a href="Shop.html">Purchase</a></li>
+          </ul>
+          <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email" /></li>
+            <li><input type="button" value="Subscribe" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2023 Taste Crusaders. All rights reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

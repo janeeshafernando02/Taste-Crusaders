@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../Styles/quiz.css">
+    <link rel="stylesheet" href="../Styles/navbar.css" />
+    <link rel="stylesheet" href="../Styles/footer.css" />
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../Images/logo1.png" class="logo-img" alt="logo">
+                <a href = "index.html" class="logo-name">Taste Crusaders</a>
+              </div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About</a></li>
+              <li><a href="ourgallery.html">Gallery</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="Quiz.html" class="active">Quiz</a></li>
+              <li><a href="Feedback.html">Review</a></li>
+              <li><a href="Shop.html">Order</a></li>
+            </ul>
+            </div>
+    </header>
+    <div class="slideShow"> <!--Image slide show for background-->
+    <!-- start Quiz button -->
+      <div class="start_btn"><button><b>Start Quiz</b></button></div>
+
+      <!-- Info Box -->
+      <div class="info_box">
+          <div class="info-title"><span>Rules of this Quiz</span></div>
+          <div class="info-list">
+                <div class="info">1. There will be 10 questions and you have to finish all within 1 min.</div>
+                <div class="info">2. You will have only <span> 6 seconds </span>per each question.</div>
+                <div class="info">3. Once you select your answer, it cannot be undone.</div>
+                <div class="info">4. You cannot exit from the Quiz while you are playing.</div>
+                <div class="info">5. You cannot select any option once time goes off.</div>
+                <div class="info">6. You will get the score once you finish the Quiz.</div>
+          </div>
+          <div class="buttons">
+              <button class="quit">Exit</button>
+              <button class="restart">Continue</button>
+          </div>
+      </div>
+
+      <!-- Quiz Box -->
+      <div class="quiz_box">
+          <header>
+              <div class="title">Question goes here</div>
+              <div class="timer">
+                  <div class="time_left_txt">Time Left</div>
+                  <div class="timer_sec">06</div>
+              </div>
+              <div class="time_line"></div>
+          </header>
+          <section>
+              <div class="que_text">
+                  <!-- Here I've inserted question from JavaScript -->
+              </div>
+              <div class="option_list">
+                  <!-- Here I've inserted options from JavaScript -->
+              </div>
+          </section>
+
+          <!-- footer of Quiz Box -->
+          <footer class="quiz-footer">
+              <div class="total_que">
+                  <!-- Here I've inserted Question Count Number from JavaScript -->
+              </div>
+              <button class="next_btn">Next</button>
+          </footer>
+      </div>
+
+      <!-- Result Box -->
+      <div class="result_box">
+          <div class="icon">
+              <i class="fa fa-child"></i>
+          </div>
+          <div class="complete_text">You've completed the Quiz!</div>
+          <div class="score_text">
+              <!-- Here I've inserted Score Result from JavaScript -->
+          </div>
+          <div class="buttons">
+              <button class="restart">Replay</button>
+              <button class="quit">Quit</button>
+          </div>
+      </div>
+
+      <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+      <script src="../Scripts/queJS.js"></script>
+
+      <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+      <script src="../Scripts/queCodeJS.js"></script>
+            
+    </div>  
+      <script>
+        // Get the current page URL
+        const currentUrl = window.location.href;
+    
+        // Get all the navigation links
+        const navLinks = document.querySelectorAll('.links li a');
+    
+        // Loop through each link and check if it matches the current URL
+        for (const link of navLinks) {
+            if (link.href === currentUrl) {
+                // Add the "active" class to the matching link
+                link.classList.add('active');
+            }
+        }
+    </script>
+      
+            <!-- Footer -->
+            <footer class="foot">
+              <div class="content">
+                <div class="top">
+                  <div class="logo-details">
+                    <img src="../Images/logo1.png" class="logo-img" alt="logo-image">  
+                    <span class="logo_name">Taste Crusaders</span>
+                  </div>
+                  <div class="media-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100084432848059"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/JaneeshaF44259"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/infinitesouls.02/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shalindi-fernando-98512927a/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@tastecrusaders8404"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="link-boxes">
+                  <ul class="box">
+                    <li class="link_name">Company</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ContactUs.html">Contact us</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="student3.html">Page Editor</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name">Categories</li>
+                    <li><a href="BeveragesBlog.html">Beverages</a></li>
+                    <li><a href="Snacks.html">Snacks</a></li>
+                    <li><a href="sweets.html">Sweets</a></li>
+                    <li><a href="#">Desserts</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Prefrences</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name">Features</li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">SiteMap</a></li>
+                    <li><a href="ourgallery.html">Gallery</a></li>
+                    <li><a href="Shop.html">Purchase</a></li>
+                  </ul>
+                  <ul class="box input-box">
+                    <li class="link_name">Subscribe</li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bottom-details">
+                <div class="bottom_text">
+                  <span class="copyright_text">Copyright © 2023 Taste Crusaders. All rights reserved</span>
+                  <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                  </span>
+                </div>
+              </div>
+            </footer>
+                    
+    </body>
+</html>
