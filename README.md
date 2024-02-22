@@ -36,8 +36,8 @@ Follow these steps to download and set up the Taste Crusaders Website:
    
    iii) Right-click on the "Images" folder and select "Download" to download it to your local machine.
 
-3. **Place the Images Folder Inside Taste Crusaders Folder**:
+3. **Place the Images Folder Inside Taste Crusaders Repository**:
 
    i) Once the "Images" folder is downloaded, navigate to the local directory where you cloned the Taste Crusaders repository.
    
-      ii) Move the downloaded "Images" folder into the Taste Crusaders folder.
+      ii) Move the downloaded "Images" folder inside the Taste Crusaders local repository folder.
